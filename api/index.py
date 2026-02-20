@@ -61,8 +61,8 @@ def chat_endpoint():
             return jsonify({"error": "Nenhuma mensagem enviada."}), 400
 
         generate_config = types.GenerateContentConfig(
-            temperature=0.8,
-            max_output_tokens=400,
+            temperature=0.6,
+            max_output_tokens=600,
             system_instruction=SYSTEM_INSTRUCTION_TEXT
         )
 
